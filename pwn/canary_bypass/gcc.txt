@@ -1,0 +1,1 @@
+gcc -o vuln vuln.c -fPIE -pie -Wl,-z,relro,-z,now -fstack-protector-strong -D_FORTIFY_SOURCE=2 -z noexecstack
